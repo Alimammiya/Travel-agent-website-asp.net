@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Travel Agent | BOOKING ANY VEN</title> 
+    <link rel="Index.aspx.cs" type="text/css" href="Index.aspx" />
+    <link rel="stylesheet" type="text/css" href="Index.css">
+    <link rel="AltoIndex.aspx.cs" type="text/css" href="AltoIndex.aspx" />
+    <link rel="MaxIndex.aspx.cs" type="text/css" href="MaxIndex.aspx" />
+    <link rel="BuloroIndex.aspx.cs" type="text/css" href="BuloroIndex.aspx" />
+    <link rel="CarIndex.aspx.cs" type="text/css" href="CarIndex.aspx" />
+    <link rel="Roadways.aspx.cs" type="text/css" href="Roadways.aspx" />
+    <link rel="PrivateBus.aspx.cs" type="text/css" href="PrivateBus.aspx" />
+     <link rel="PhotoGalaryIndex.aspx.cs" type="text/css" href="PhotoGalaryIndex.aspx" />
+    <link rel="AboutIndex.aspx.cs" type="text/css" href="AboutIndex.aspx" />
+    <link rel="ContactUsIndex.aspx.cs" type="text/css" href="ContactUsIndex.aspx" /> 
+
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 39px;
+        }
+        .auto-style2 {
+            height: 156px;
+        }
+        .auto-style3 {
+            width: 1182px;
+        }
+        .auto-style4 {
+            height: 17px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="width:100%; margin:0 auto">
+            <tr style="width:100%; height:50px">
+                <td style="width:60px">
+                    <img src="image/woman-with-headset_318-61518.jpg" style="height: 68px; width: 114px; margin-top: 0px" />
+                </td>
+                <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font size="8"> TRAVEL AGENT </font></b></td>
+                <td style="width:900px; text-align:right">
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="49px" 
+                        ImageUrl="~/image/facebook-icon-preview-1.png" Width="49px" />&nbsp;&nbsp;<asp:ImageButton ID="ImageButton2" runat="server" Height="43px" ImageUrl="~/image/instragram.png" Width="37px" />&nbsp;&nbsp;<asp:ImageButton ID="ImageButton3" runat="server" Height="43px" ImageUrl="~/image/whatsapp.png" Width="46px" />
+                </td>
+            </tr>
+            <tr style="width:100%: height:40px; background-color:#59ace8 ">
+                <td colspan="3" class="auto-style1">
+    <ul>
+		<li><a> <a href="Index.aspx"> HOME</a></a></li>
+		<li> <a> <a href="#">VAN </a>
+			<ul>
+				<li><a><a href="AltoIndex.aspx">ALTO </a></li>
+			    <li><a href="MaxIndex.aspx"> MAXX </a></li>
+			    <li><a><a href="BuloroIndex.aspx">BULORO </a></li>
+			    <li><a><a href="CarIndex.aspx">CAR </a></li>
+		    </ul>
+		</li>
+		<li><a><a href="#"> BUS </a>
+			<ul>
+				<li><a> <a href="Roadways.aspx">ROADWAYS</a></li>
+				<li><a> <a href="PrivateBus.aspx">PRIVATE </a></li>
+			</ul>
+
+		</li>
+		<li><a> <a href="#">ONLINE BOOKING</a>
+			<ul>
+				<li><a><a href="#"> VAN </a></li>
+			</ul>
+		</li>
+		<li><a><a href="PhotoGalaryIndex.aspx">PHOTO GALARY  </a></li>
+        <li><a><a href="AboutIndex.aspx"> ABOUT US </a></li>
+        <li><a> <a href="ContactUsIndex.aspx">Contact Us </a></li>
+
+	</ul>
+                                  
+                        <StaticHoverStyle BackColor="#FF6600" ForeColor="#33CC33" />
+                        <StaticMenuItemStyle Font-Size="Large" ForeColor="Black" HorizontalPadding="30px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr style="width:100%; ">
+                <td colspan="3" class="auto-style2">
+                    <img src="image/travelagent.png" style="height: 250px; width: 100%; margin-right: 0px" />
+                </td>
+            </tr>
+            <tr style="width:100%"> 
+                <td colspan="3" class="auto-style4">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr style="width:100%: height:20px; background-color:black; text-align:center; color:#ffffff"> 
+                <td colspan="3">
+                   TRAVEL AGENT 
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>
